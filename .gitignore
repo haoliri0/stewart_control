@@ -1,0 +1,9 @@
+ConsoleApplication2/.vs/*
+ConsoleApplication2/Debug/*
+ConsoleApplication2/ipch/*
+ConsoleApplication2/x64/*
+*.sdf
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
