@@ -1,17 +1,16 @@
-%% 此程序用于复位
+%% ??????????????p38????PlayVisit??????????????
 
 % echoudp('on',4012)
  
 u = udp('192.168.15.255',7402,'LocalPort',8410);
  fopen(u) 
-%  fopen(v)
  
  %*************************************************************************
  % Udp Data: App Control Field
  %*************************************************************************
  ConfirmCode=[ hex2dec('55'),hex2dec('aa')];
  PassCode=[ hex2dec('00'),hex2dec('00')];
- FunctionCode=[ hex2dec('12'),hex2dec('01')];
+ FunctionCode=[ hex2dec('12'),hex2dec('01')];%?????1201
  ChannelCode=[ hex2dec('00'),hex2dec('02')];
  
  AppControlFiled=[ ConfirmCode,PassCode,FunctionCode,ChannelCode ];
@@ -44,7 +43,7 @@ u = udp('192.168.15.255',7402,'LocalPort',8410);
  fwrite(u, UdpData)
  
  fclose(u)
-%  fclose(v)
+
  
  
  

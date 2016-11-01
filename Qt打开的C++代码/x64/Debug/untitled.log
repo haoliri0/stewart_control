@@ -1,0 +1,127 @@
+﻿生成启动时间为 11/1/2016 8:09:44 PM。
+     1>项目“G:\control\Qt打开的C++代码\untitled.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Moc'ing controller.h...
+         Uic'ing controller.ui...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /IF:\Qt\5.2.1\msvc2012_64\include /IF:\Qt\5.2.1\msvc2012_64\include\QtWidgets /IF:\Qt\5.2.1\msvc2012_64\include\QtNetwork /IF:\Qt\5.2.1\msvc2012_64\include\QtGui /IF:\Qt\5.2.1\msvc2012_64\include\QtANGLE /IF:\Qt\5.2.1\msvc2012_64\include\QtCore /Idebug /I. /I"F:\Qt\5.2.1\msvc2012_64\mkspecs\win32-msvc2012" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /D _WINDOWS /D QT_CORE_LIB /D QT_GUI_LIB /D QT_NETWORK_LIB /D QT_OPENGL_ES_2 /D QT_OPENGL_ES_2_ANGLE /D QT_WIDGETS_LIB /D UNICODE /D UNICODE /D WIN32 /D WIN32 /D WIN64 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt -Zm200 -w34100 -w34189 controller.cpp GeneratedFiles\Debug\moc_controller.cpp main.cpp matrix.cpp mpoint.cpp platform.cpp
+         controller.cpp
+     1>controller.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\control\qt打开的c++代码\controller.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\control\qt打开的c++代码\matrix.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\control\qt打开的c++代码\platform.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>f:\qt\5.2.1\msvc2012_64\include\qtcore\qdatetime.h(122): warning C4003: “min”宏的实参不足
+     1>f:\qt\5.2.1\msvc2012_64\include\qtcore\qdatetime.h(122): error C2589: “(”:“::”右边的非法标记
+     1>f:\qt\5.2.1\msvc2012_64\include\qtcore\qdatetime.h(122): error C2059: 语法错误:“::”
+     1>controller.cpp(30): error C2065: “m_flag”: 未声明的标识符
+     1>controller.cpp(32): error C2065: “tempInt”: 未声明的标识符
+     1>controller.cpp(33): error C2065: “m_flag”: 未声明的标识符
+     1>controller.cpp(35): error C2065: “m_flag”: 未声明的标识符
+     1>controller.cpp(37): error C2065: “temp”: 未声明的标识符
+     1>controller.cpp(38): error C2065: “temp”: 未声明的标识符
+     1>controller.cpp(38): error C2065: “tempInt”: 未声明的标识符
+     1>controller.cpp(38): error C2228: “.sprintf”的左边必须有类/结构/联合
+     1>controller.cpp(39): error C2065: “temp”: 未声明的标识符
+     1>controller.cpp(39): error C2065: “tempInt”: 未声明的标识符
+     1>controller.cpp(39): error C2228: “.sprintf”的左边必须有类/结构/联合
+     1>controller.cpp(40): error C2065: “temp”: 未声明的标识符
+     1>controller.cpp(40): error C2065: “tempInt”: 未声明的标识符
+     1>controller.cpp(40): error C2228: “.sprintf”的左边必须有类/结构/联合
+     1>controller.cpp(41): error C2065: “temp”: 未声明的标识符
+     1>controller.cpp(41): error C2065: “tempInt”: 未声明的标识符
+     1>controller.cpp(41): error C2228: “.sprintf”的左边必须有类/结构/联合
+     1>controller.cpp(42): error C2065: “temp”: 未声明的标识符
+     1>controller.cpp(45): error C2039: “stateUpDate”: 不是“Controller”的成员
+                 g:\control\qt打开的c++代码\controller.h(25) : 参见“Controller”的声明
+     1>controller.cpp(48): error C2059: 语法错误:“for”
+     1>controller.cpp(48): error C2143: 语法错误 : 缺少“)”(在“;”的前面)
+     1>controller.cpp(48): error C2143: 语法错误 : 缺少“;”(在“<”的前面)
+     1>controller.cpp(48): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>controller.cpp(48): error C2143: 语法错误 : 缺少“;”(在“++”的前面)
+     1>controller.cpp(48): error C2086: “int i”: 重定义
+                 controller.cpp(48) : 参见“i”的声明
+     1>controller.cpp(48): error C2059: 语法错误:“)”
+     1>controller.cpp(48): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>controller.cpp(48): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>controller.cpp(88): error C2143: 语法错误 : 缺少“;”(在“.”的前面)
+     1>controller.cpp(88): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>controller.cpp(88): error C2371: “mutex”: 重定义；不同的基类型
+                 controller.cpp(9) : 参见“mutex”的声明
+     1>controller.cpp(89): error C2059: 语法错误:“}”
+     1>controller.cpp(89): error C2143: 语法错误 : 缺少“;”(在“}”的前面)
+     1>controller.cpp(98): error C2065: “keyHook”: 未声明的标识符
+     1>controller.cpp(113): error C2065: “keyHook”: 未声明的标识符
+     1>controller.cpp(121): error C2065: “m_flag”: 未声明的标识符
+     1>controller.cpp(122): error C2065: “m_timer”: 未声明的标识符
+     1>controller.cpp(123): error C2065: “m_ti”: 未声明的标识符
+     1>controller.cpp(124): error C2065: “m_timer”: 未声明的标识符
+     1>controller.cpp(125): error C2065: “m_ti”: 未声明的标识符
+     1>controller.cpp(127): error C2065: “keyHook”: 未声明的标识符
+     1>controller.cpp(134): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(134): error C2228: “.set”的左边必须有类/结构/联合
+     1>controller.cpp(135): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(135): error C2228: “.set”的左边必须有类/结构/联合
+     1>controller.cpp(136): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(136): error C2228: “.set”的左边必须有类/结构/联合
+     1>controller.cpp(137): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(137): error C2228: “.set”的左边必须有类/结构/联合
+     1>controller.cpp(138): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(138): error C2228: “.set”的左边必须有类/结构/联合
+     1>controller.cpp(147): error C2065: “m_timer”: 未声明的标识符
+     1>controller.cpp(147): error C2227: “->start”的左边必须指向类/结构/联合/泛型类型
+                 类型是“'unknown-type'”
+     1>controller.cpp(148): error C2065: “m_ti”: 未声明的标识符
+     1>controller.cpp(148): error C2227: “->start”的左边必须指向类/结构/联合/泛型类型
+                 类型是“'unknown-type'”
+     1>controller.cpp(155): error C2065: “m_ti”: 未声明的标识符
+     1>controller.cpp(155): error C2541: “delete”: 不能删除不是指针的对象
+     1>controller.cpp(156): error C2065: “m_timer”: 未声明的标识符
+     1>controller.cpp(156): error C2541: “delete”: 不能删除不是指针的对象
+     1>controller.cpp(175): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(176): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(178): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(179): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(181): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(183): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(185): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(187): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(191): error C2065: “fixPoint”: 未声明的标识符
+     1>controller.cpp(202): error C2065: “a”: 未声明的标识符
+     1>controller.cpp(211): error C3861: “hexStringtoByteArray”: 找不到标识符
+     1>controller.cpp(218): error C2059: 语法错误:“else”
+     1>controller.cpp(218): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>controller.cpp(218): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>controller.cpp(223): error C2059: 语法错误:“}”
+     1>controller.cpp(223): error C2143: 语法错误 : 缺少“;”(在“}”的前面)
+     1>controller.cpp(226): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>controller.cpp(226): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>controller.cpp(280): error C2039: “hexStringtoByteArray”: 不是“Controller”的成员
+                 g:\control\qt打开的c++代码\controller.h(25) : 参见“Controller”的声明
+     1>controller.cpp(282): error C3861: “formatString”: 找不到标识符
+     1>controller.cpp(286): error C2065: “ret”: 未声明的标识符
+     1>controller.cpp(286): error C2228: “.append”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>controller.cpp(287): error C2065: “ret”: 未声明的标识符
+     1>controller.cpp(290): error C2039: “formatString”: 不是“Controller”的成员
+                 g:\control\qt打开的c++代码\controller.h(25) : 参见“Controller”的声明
+         moc_controller.cpp
+     1>g:\control\qt打开的c++代码\generatedfiles\debug\../../controller.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\control\qt打开的c++代码\matrix.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\control\qt打开的c++代码\platform.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>GeneratedFiles\Debug\moc_controller.cpp(71): error C2039: “stateUpDate”: 不是“Controller”的成员
+                 g:\control\qt打开的c++代码\generatedfiles\debug\../../controller.h(25) : 参见“Controller”的声明
+         main.cpp
+     1>g:\control\qt打开的c++代码\controller.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\control\qt打开的c++代码\matrix.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>g:\control\qt打开的c++代码\platform.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         matrix.cpp
+     1>g:\control\qt打开的c++代码\matrix.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         mpoint.cpp
+         platform.cpp
+     1>g:\control\qt打开的c++代码\platform.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+     1>已完成生成项目“G:\control\Qt打开的C++代码\untitled.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:22.92
