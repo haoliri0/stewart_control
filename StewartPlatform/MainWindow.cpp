@@ -2,6 +2,7 @@
 #include "ui_MainWindow.h"
 #include "SixJoints.h"
 #include <QDockWidget>
+#include "CG27.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -47,6 +48,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //发送udp报文
     connect(sixJointsForStepperPlatform, SIGNAL(SendMessage(QString)), serialPort, SLOT(sendMessage(QString)));
+
+	CG27 *cg27 = new CG27;
+	
+	cg27->start();
 }
 
 MainWindow::~MainWindow()

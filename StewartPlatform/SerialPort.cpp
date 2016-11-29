@@ -89,14 +89,14 @@ void SerialPort::sendMessage(QString data)
         data1 += QString::number(100000).sprintf("%08x",100000);
         data1 += QString("12345678abcd");
         QByteArray ba = hexStringtoByteArray(data1);
-        commu->writeDatagram(ba, ba.length(), QHostAddress::Broadcast, 7408); //广播发送至7408端口
+        commu->writeDatagram(ba, ba.length(), QHostAddress::Broadcast, 7402); //广播发送至7402端口
         QTime t1;
         t1.start();
         while(t1.elapsed()<300);
     }
     else {                                                                      //有效报文
         QByteArray ba = hexStringtoByteArray(data);
-        commu->writeDatagram(ba, ba.length(), QHostAddress::Broadcast, 7408);
+        commu->writeDatagram(ba, ba.length(), QHostAddress::Broadcast, 7402);
     }
 }
 /*!

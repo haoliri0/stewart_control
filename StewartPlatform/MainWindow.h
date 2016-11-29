@@ -3,6 +3,7 @@
 #include "SixJoints.h"
 #include <QMainWindow>
 #include "SerialPort.h"
+#include "CG27.h"
 
 namespace Ui {
 class MainWindow;
@@ -25,8 +26,10 @@ private:
 
     Ui::MainWindow *ui;
 //    SixJoints *sixJoints;
+public:
     SixJoints *sixJointsForSteerPlatform;
     SixJoints *sixJointsForStepperPlatform;
+private:
     SerialPort *serialPort;
 
     QDockWidget *serialDock;
@@ -38,6 +41,7 @@ private:
     QAction *stepperPlatformAction;
 
     QToolBar *toolBar;
+	CG27 *cg27;
 };
 
 #endif // MAINWINDOW_H

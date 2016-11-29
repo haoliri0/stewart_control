@@ -29,7 +29,7 @@ Platform::Platform(Type type)
         range[3] = QVector3D(-30, 0, 30);
         range[4] = QVector3D(-30, 0, 30);
         range[5] = QVector3D(-30, 0, 30);
-        linkType = true;                                                        //false为外摆结构，true为内摆结构
+        linkType = false;                                                        //false为外摆结构，true为内摆结构
     } else if (stewartType == StepperMotor) {                                          //步进电机结构
         topRadius = 75;
         topInterval = 140;

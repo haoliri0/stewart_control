@@ -65,6 +65,10 @@ bool SixJoints::GetJoints(QVector<double> &joints)
     }
 }
 
+void SixJoints::directSetPos(QVector<double> pos){
+
+}
+
 /*!
  * \brief SixJoints::onTCPValueChanged              由spinBox触发后，更改slider的值，并将TCP发射出去
  */
@@ -190,6 +194,14 @@ void SixJoints::SetPos(QVector<double> pos)
     }
 }
 
+void SixJoints::SetSlider(QVector<double> pos)
+{
+	qDebug() << "setting slider"; 
+	for (int index = 0; index < 6; ++index) {
+		QDoubleSpinBox *spinBox = findChild<QDoubleSpinBox *>(QString("doubleSpinBoxTCP%1").arg(index+1));
+		spinBox->setValue(pos[index]);
+	}
+}
 
 void SixJoints::on_start_clicked()
 {

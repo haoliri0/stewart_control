@@ -18,6 +18,7 @@ public:
     explicit SixJoints(QWidget *parent, Platform::Type type);
     ~SixJoints();
     bool GetJoints(QVector<double> &joints);
+	void directSetPos(double xp, double yp, double zp, double ap, double bp, double cp);
 
 signals:
     void TCPChanged(QVector<qreal> pos);
@@ -29,6 +30,7 @@ signals:
 public slots:
     void SetPos(double xp, double yp, double zp, double ap, double bp, double cp);
     void SetPos(QVector<double> pos);
+	void SetSlider(QVector<double> pos);
 
 private slots:
     void on_pushButtonReset_clicked();
@@ -49,8 +51,8 @@ private:
     QTimer *timerForStart;
     QVector<double> pose;
 
-    int driveRate = 10000;
-    const int sampleRate = 20;                                                  //采样率，单位Hz
+    int driveRate;
+    static const int sampleRate = 20;                                                  //采样率，单位Hz
 
 };
 

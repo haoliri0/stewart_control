@@ -2,10 +2,15 @@
 #include <QDebug>
 #include <QApplication>
 
+extern double lr_angle;
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+	//CG27 cg;
+	MainWindow w;
+	//CG27 cg;
+	w.show();
+    //w.show();   
     return a.exec();
 }

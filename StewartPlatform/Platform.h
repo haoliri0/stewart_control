@@ -36,7 +36,7 @@ private:
     double c;
 
     Type stewartType;
-    bool linkType = true;                                                       //false为外摆结构，true为内摆结构
+    bool linkType;                                                       //false为外摆结构，true为内摆结构
 
     /* mechanical parameters of stewart platform */
     double topRadius;                                                           /* 动平台参考点六边形内切圆半径 */

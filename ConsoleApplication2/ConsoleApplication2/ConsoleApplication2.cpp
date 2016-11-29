@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "stdafx.h"		//vs的标准头文件，在qt_creator环境下去掉
 
 //在注册表该目录下增加新内容
 #define TASKMANAGER "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System"
@@ -14,6 +14,9 @@ volatile int key_state[10];
 //keystate表示按键状态，分别对应up,down,left,right,z,x,w,s键。1表示按下，0表示未按下。
 //key_state[8]和key_state[9]待定
 
+
+//下面是c++调用matlab引擎的方法，此方法配置环境较为复杂，不推荐
+/*	
 class DMEngine {	//调用matlab engine的相关class
 
 	Engine *ep;
@@ -50,6 +53,7 @@ public:
 
 	void Pause() { system("pause"); }
 } *matlab_engine;
+*/
 
 //键盘钩子过程
 LRESULT CALLBACK keyProc(int nCode, WPARAM wParam, LPARAM lParam)
@@ -77,7 +81,7 @@ LRESULT CALLBACK keyProc(int nCode, WPARAM wParam, LPARAM lParam)
 			{
 				key_state[3] = 1;
 			}
-			if (pkbhs->vkCode == 90)	//z键，实际为大写Z对应的ascii码
+			if (pkbhs->vkCode == 90)	//z键，实际为大写Z对应的ascii码，请查ascii码表
 			{
 				key_state[4] = 1;
 			}
@@ -164,9 +168,9 @@ void setHook()
 void controller() {
 
 // 切记，应当在复位后手动调整至(x, y, z) = (0, 0, 440) (a, b, c) = (0, 0, 0)，这样不会出现跳变，比较安全
-	matlab_engine = new DMEngine();
 	
 	//添加matlab执行路径到engine中，该路径下存放了main_stewart.m和play_visit.m等
+	matlab_engine = new DMEngine();
 	matlab_engine->Eval("addpath('G:\\control\\matlab')");
 
 	int ct[6] = { 0,0,450,0,0,0 };	//平台的初始位姿，应当在复位后调整至该状态 (x,y,z) = (0,0,440) (a,b,c) = (0,0,0)
@@ -221,6 +225,7 @@ void controller() {
 	while (1) {
 		Sleep(20);
 		flag = false;
+		/*
 		if (key_state[0] == 1) {
 			if (ct[2] + delta_up[2] <= high_bound[2] && ct[3] + delta_up[3] <= high_bound[3]) {
 				ct[2] += delta_up[2];
@@ -281,7 +286,7 @@ void controller() {
 			flag = true;
 			temp = 7;
 		}
-
+		*/
 
 		stringstream ss;
 		ss << "main_stewart(";
@@ -291,9 +296,12 @@ void controller() {
 		string cmd = ss.str();
 		if (flag == true) {
 			cout << "run command: " << cmd << endl;
-			int rt = matlab_engine->Eval(cmd);	//调用matlab，指令为cmd
-			cout << "return " << rt << endl;
+			//A1：运行cmd指令，执行发报程序。需要补完
+
+			//int rt = matlab_engine->Eval(cmd);	//调用matlab，指令为cmd
+			//cout << "return " << rt << endl;
 		}
+
 		/*
 		下面注释的为自动复位的代码，貌似还有点问题，比较简单，建议自主实现
 		else if (ct[temp] != initial[temp]) {
